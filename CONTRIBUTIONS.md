@@ -16,4 +16,4 @@ If you need any help please visit the [README.md](https://github.com/YELLOWHATT/
 
 Or email this email: thekoolaidmannn@gmail.com 
 
-#### hanks for contributing :) 
+#### Thanks for contributing :) 

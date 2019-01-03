@@ -1,5 +1,6 @@
 #!/bin/bash 
 
 # This is to run directly from this file 
+# Though this file is not neccisarily needed 
 
 ./comet 

@@ -6,9 +6,7 @@
 
 --- 
 
-### Table of Contents 
-
-### Table of Contents 
+### Table of Contents  
 
 These are the sections on the [README.md](https://github.com/YELLOWHATT/Comet/blob/master/README.md) file. 
 

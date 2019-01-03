@@ -25,7 +25,8 @@ class student
 		{ 
 
 			std::cout << "\nPlease enter your name: ";  
-			std::cin >> name; 
+			std::cin.ignore();  
+			std::getline(std::cin, name); 
 			std::cout << "\nPlease enter your gpa: ";
 			std::cin >> gpa; 
 	
@@ -45,7 +46,7 @@ std::ostream& operator << (std::ostream& out, const student& obj)
 
 	out << obj.name << obj.gpa << std::endl; 
 
-	return out; 
+	return (out); 
 
 } 
 
@@ -74,6 +75,5 @@ int main(void)
 	std::cin.get(); 
 
 	return (0); 
-
 
 }

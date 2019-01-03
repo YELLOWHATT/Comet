@@ -8,8 +8,9 @@ class student
 
 		std::string name; 
 		float gpa; 
+		unsigned short int num; 
 
-	public: 
+	public:
 
 		friend std::ostream& operator << (std::ostream& out, const student& obj); 
  	
@@ -24,18 +25,22 @@ class student
 		void info(void)
 		{ 
 
-			std::cout << "\nPlease enter your name: ";  
+			std::cout << "\nPlease enter student name: ";  
 			std::cin.ignore();  
-			std::getline(std::cin, name); 
-			std::cout << "\nPlease enter your gpa: ";
+			std::getline(std::cin, name);
+
+			std::cout << "\nPlease enter student gpa: ";
 			std::cin >> gpa; 
+
+			std::cout << "\nPlease enter student number: "; 
+			std::cin >> num; 
 	
 		} 
 
 		void output(void)
 		{
 			
-			std::cout << "\nName: " << name << "\nGPA: " << gpa << std::endl; 
+			std::cout << "\nName: " << name << "\nGPA: " << gpa << "\nStudent Number: " << num << std::endl; 
 		
 		}	
 
@@ -44,7 +49,7 @@ class student
 std::ostream& operator << (std::ostream& out, const student& obj)
 {
 
-	out << obj.name << obj.gpa << std::endl; 
+	out << obj.name << obj.gpa << obj.num << std::endl; 
 
 	return (out); 
 
@@ -59,7 +64,7 @@ int main(void)
 
 	std::cout << "Please enter the number of students you wish to log: "; 
 	std::cin >> n; 
-	std::cout << "\n"; 
+	
 	student students[n]; 
 
 	for (int i = 0; i < n; i++)

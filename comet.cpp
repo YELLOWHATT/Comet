@@ -14,11 +14,12 @@ class student
 
 		friend std::ostream& operator << (std::ostream& out, const student& obj); 
  	
-		void redec(float new_gpa, std::string new_name)
+		void redec(float new_gpa, std::string new_name, unsigned short int new_num)
 		{
 
 			gpa = new_gpa; 
 			name = new_name; 
+			num = new_num; 
 
 		}
 
@@ -40,7 +41,7 @@ class student
 		void output(void)
 		{
 			
-			std::cout << "\nName: " << name << "\nGPA: " << gpa << "\nStudent Number: " << num << std::endl; 
+			std::cout << "\nStudent Name: " << name << "\nStudent GPA: " << gpa << "\nStudent Number: " << num << std::endl; 
 		
 		}	
 
